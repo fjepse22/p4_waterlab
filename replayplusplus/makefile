@@ -1,4 +1,6 @@
+# https://makefiletutorial.com/
+
 CXX = g++
 
-test:
-	$(CC) test.cc -o test
+logging:
+	$(CC) logging.cc -o test

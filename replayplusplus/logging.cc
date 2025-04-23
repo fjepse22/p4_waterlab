@@ -1,5 +1,7 @@
 // C++ program to implement a basic logging system.
 
+// link to source kode https://www.geeksforgeeks.org/logging-system-in-cpp/
+
 #include <ctime>
 #include <fstream>
 #include <iostream>
