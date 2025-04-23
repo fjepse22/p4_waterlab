@@ -1,2 +1,4 @@
+CXX = g++
+
 test:
-	g++ test.cc -o test
+	$(CC) test.cc -o test
