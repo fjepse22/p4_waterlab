@@ -108,9 +108,6 @@ int main(int argc, char* argv[]){
     for (int i = 1; i < argc; ++i) {
         std::string arg = argv[i];
         if (arg == "--intfnames" && i + 1 < argc) {
-            cout << "I try to assign values to interfaces now \n";
-
-           cout << argv[i+1] << "\n";
 
             interface_name_a = argv[i+1]; // first interfacename
             interface_name_b = argv[i+2]; // second interfacename
