@@ -107,17 +107,22 @@ int main(int argc, char* argv[]){
 
     for (int i = 1; i < argc; ++i) {
         std::string arg = argv[i];
-        if (arg == "--interfacenames" && i + 2 < argc) {
-            interface_name_a = argv[++i]; // first interfacename
+        if (arg == "--intfnames" && i + 1 < argc) {
+            cout << "I try to assign values to interfaces now \n";
+
+           cout << argv[i+1] << "\n";
+
+            interface_name_a = argv[i+1]; // first interfacename
             interface_name_b = argv[i+2]; // second interfacename
         } else if (arg == "--evilmode" && i + 1 < argc && (strcmp (argv[++i],"true") ==0)) { // if input is "true" chance evilmode to true, is to be implemented
             evilmode = true;
         }
     }
 
-    cout << interface_name_a <<"\n";
-    cout << interface_name_b <<"\n";
-    cout << evilmode <<" n\"";
+    cout << "int a:"<< interface_name_a <<"\n";
+    cout <<"int b: "<< interface_name_b <<"\n";
+    cout << "evilmode:" << evilmode <<" n\"";
+
 
     // Further implementation would go here
     Interface interface_a(interface_name_a);
