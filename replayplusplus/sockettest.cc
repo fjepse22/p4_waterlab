@@ -47,7 +47,7 @@ class Interface{
 
     Interface(const string name){
         inferface_name = name;
-        ServerSocket = socket(AF_PACKET,SOCK_RAW,ETH_P_ALL);
+        ServerSocket = socket(AF_PACKET,SOCK_RAW,htons(ETH_P_ALL)); //htons(EHT_P_ALL) means all protocols are recieved.
 
         if (ServerSocket < 0) { // F: if socket is not made correctly
             perror("socket");
@@ -101,8 +101,8 @@ class Interface{
 
 int main(int argc, char* argv[]){
 
-    string interface_name_a;
-    string interface_name_b;
+    char* interface_name_a;
+    char* interface_name_b;
     bool evilmode = false; //default behaivor is invisible, unless input is (--evilmode "true")
 
     for (int i = 1; i < argc; ++i) {
@@ -114,6 +114,11 @@ int main(int argc, char* argv[]){
             evilmode = true;
         }
     }
+
+    cout << interface_name_a <<" n\"";
+    cout << interface_name_b <<" n\"";
+    cout << evilmode <<" n\"";
+
     // Further implementation would go here
     Interface interface_a(interface_name_a);
     
@@ -126,4 +131,3 @@ int main(int argc, char* argv[]){
     
 
 }
-
