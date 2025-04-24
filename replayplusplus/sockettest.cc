@@ -101,8 +101,8 @@ class Interface{
 
 int main(int argc, char* argv[]){
 
-    char* interface_name_a;
-    char* interface_name_b;
+    string interface_name_a;
+    string interface_name_b;
     bool evilmode = false; //default behaivor is invisible, unless input is (--evilmode "true")
 
     for (int i = 1; i < argc; ++i) {
@@ -115,8 +115,8 @@ int main(int argc, char* argv[]){
         }
     }
 
-    cout << interface_name_a <<" n\"";
-    cout << interface_name_b <<" n\"";
+    cout << interface_name_a <<"\n";
+    cout << interface_name_b <<"\n";
     cout << evilmode <<" n\"";
 
     // Further implementation would go here
@@ -124,7 +124,7 @@ int main(int argc, char* argv[]){
     
     interface_a.sock_listen();
     
-    
+
     
     return 0;
 
