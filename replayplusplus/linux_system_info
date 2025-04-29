@@ -1,0 +1,82 @@
+System:
+  Kernel: 6.8.0-58-generic arch: x86_64 bits: 64 compiler: gcc v: 13.3.0
+  Desktop: Cinnamon v: 6.4.8 tk: GTK v: 3.24.41 wm: Muffin dm: LightDM
+    Distro: Linux Mint 22.1 Xia base: Ubuntu 24.04 noble
+Machine:
+  Type: Laptop System: ASUSTeK product: K55VD v: 1.0 serial: <superuser required>
+  Mobo: ASUSTeK model: K55VD v: 1.0 serial: <superuser required> UEFI: American Megatrends
+    v: K55VD.203 date: 03/12/2012
+Battery:
+  ID-1: BAT0 charge: 0 Wh (0.0%) condition: 41.2/51.7 Wh (79.7%) volts: 7.5 min: 10.8
+    model: ASUSTeK K55--47 serial: N/A status: charging
+CPU:
+  Info: quad core model: Intel Core i7-3610QM bits: 64 type: MT MCP arch: Ivy Bridge rev: 9 cache:
+    L1: 256 KiB L2: 1024 KiB L3: 6 MiB
+  Speed (MHz): avg: 1198 high: 1200 min/max: 1200/3300 cores: 1: 1200 2: 1197 3: 1200 4: 1197
+    5: 1197 6: 1200 7: 1197 8: 1200 bogomips: 36716
+  Flags: avx ht lm nx pae sse sse2 sse3 sse4_1 sse4_2 ssse3 vmx
+Graphics:
+  Device-1: Intel 3rd Gen Core processor Graphics vendor: ASUSTeK driver: i915 v: kernel
+    arch: Gen-7 ports: active: LVDS-1 empty: DP-1,HDMI-A-1,VGA-2 bus-ID: 00:02.0 chip-ID: 8086:0166
+  Device-2: NVIDIA GF119M [GeForce 610M] vendor: ASUSTeK driver: nouveau v: kernel arch: Fermi
+    pcie: speed: 2.5 GT/s lanes: 16 ports: active: none off: VGA-1 empty: none bus-ID: 01:00.0
+    chip-ID: 10de:1058 temp: 41.0 C
+  Device-3: Alcor Micro Asus Integrated Webcam driver: uvcvideo type: USB rev: 2.0
+    speed: 480 Mb/s lanes: 1 bus-ID: 2-1.3:4 chip-ID: 058f:a014
+  Display: x11 server: X.Org v: 21.1.11 with: Xwayland v: 23.2.6 driver: X: loaded: modesetting
+    unloaded: fbdev,vesa dri: crocus gpu: i915,nouveau display-ID: :0 screens: 1
+  Screen-1: 0 s-res: 1366x768 s-dpi: 96
+  Monitor-1: LVDS-1 pos: primary model: AU Optronics 0x26ec res: 1366x768 dpi: 101
+    diag: 394mm (15.5")
+  Monitor-2: VGA-1 mapped: VGA-1-1 note: disabled size-res: N/A
+  API: EGL v: 1.5 platforms: device: 0 drv: nouveau device: 1 drv: crocus device: 2 drv: swrast
+    gbm: drv: nouveau surfaceless: drv: nouveau x11: drv: crocus inactive: wayland
+  API: OpenGL v: 4.5 compat-v: 4.2 vendor: intel mesa v: 24.2.8-1ubuntu1~24.04.1 glx-v: 1.4
+    direct-render: yes renderer: Mesa Intel HD Graphics 4000 (IVB GT2) device-ID: 8086:0166
+Audio:
+  Device-1: Intel 7 Series/C216 Family High Definition Audio vendor: ASUSTeK 7
+    driver: snd_hda_intel v: kernel bus-ID: 00:1b.0 chip-ID: 8086:1e20
+  API: ALSA v: k6.8.0-58-generic status: kernel-api
+  Server-1: PipeWire v: 1.0.5 status: active with: 1: pipewire-pulse status: active
+    2: wireplumber status: active 3: pipewire-alsa type: plugin
+Network:
+  Device-1: Qualcomm Atheros AR9485 Wireless Network Adapter vendor: AzureWave driver: ath9k
+    v: kernel pcie: speed: 2.5 GT/s lanes: 1 bus-ID: 03:00.0 chip-ID: 168c:0032
+  IF: wlp3s0 state: up mac: <filter>
+  Device-2: Realtek RTL8111/8168/8211/8411 PCI Express Gigabit Ethernet
+    vendor: ASUSTeK RTL8111/8168/8411 driver: r8169 v: kernel pcie: speed: 2.5 GT/s lanes: 1
+    port: d000 bus-ID: 04:00.2 chip-ID: 10ec:8168
+  IF: enp4s0f2 state: down mac: <filter>
+  Device-3: Realtek RTL8153 Gigabit Ethernet Adapter driver: r8152 type: USB rev: 2.1
+    speed: 480 Mb/s lanes: 1 bus-ID: 3-3:2 chip-ID: 0bda:8153
+  IF: enx3c18a0243911 state: up speed: 1000 Mbps duplex: full mac: <filter>
+Drives:
+  Local Storage: total: 223.57 GiB used: 43.31 GiB (19.4%)
+  ID-1: /dev/sda vendor: Kingston model: SV300S37A240G size: 223.57 GiB speed: 6.0 Gb/s
+    serial: <filter>
+Partition:
+  ID-1: / size: 218.51 GiB used: 43.31 GiB (19.8%) fs: ext4 dev: /dev/sda2
+  ID-2: /boot/efi size: 511 MiB used: 6.1 MiB (1.2%) fs: vfat dev: /dev/sda1
+Swap:
+  ID-1: swap-1 type: file size: 2 GiB used: 0 KiB (0.0%) priority: -2 file: /swapfile
+Sensors:
+  System Temperatures: cpu: 47.0 C mobo: N/A gpu: nouveau temp: 41.0 C
+  Fan Speeds (rpm): cpu: 0
+Repos:
+  Packages: pm: dpkg pkgs: 2027
+  No active apt repos in: /etc/apt/sources.list
+  Active apt repos in: /etc/apt/sources.list.d/google-chrome.list
+    1: deb [arch=amd64] https: //dl.google.com/linux/chrome/deb/ stable main
+  Active apt repos in: /etc/apt/sources.list.d/official-package-repositories.list
+    1: deb http: //packages.linuxmint.com xia main upstream import backport
+    2: deb http: //archive.ubuntu.com/ubuntu noble main restricted universe multiverse
+    3: deb http: //archive.ubuntu.com/ubuntu noble-updates main restricted universe multiverse
+    4: deb http: //archive.ubuntu.com/ubuntu noble-backports main restricted universe multiverse
+    5: deb http: //security.ubuntu.com/ubuntu/ noble-security main restricted universe multiverse
+  Active apt repos in: /etc/apt/sources.list.d/vscode.list
+    1: deb [arch=amd64,arm64,armhf] https: //packages.microsoft.com/repos/code stable main
+Info:
+  Memory: total: 8 GiB available: 7.64 GiB used: 1.65 GiB (21.7%)
+  Processes: 265 Power: uptime: 13m wakeups: 0 Init: systemd v: 255 target: graphical (5)
+    default: graphical
+  Compilers: gcc: 13.3.0 Client: Unknown python3.12 client inxi: 3.3.34
