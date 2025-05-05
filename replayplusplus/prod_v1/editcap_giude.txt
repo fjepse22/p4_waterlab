@@ -1,6 +1,6 @@
 editcap (installeret på linuxpc)
 
-Editcap original.pcapng filtered.pcapng 6 12 18 5 11 17 23
+editcap original.pcapng filtered.pcapng 6 12 18 5 11 17 23
 Tal = de pakkenumre der skal fjernes fra den originale pcapfil i den nye pcapfil.
 
 Brug -r for kun at beholde disse pakker fremfor at slette
